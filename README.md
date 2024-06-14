@@ -1,8 +1,15 @@
 # sql-vm-dcr
+The purpose of this repo is to test custom performance counters and to resolve an issue that was posted on [reddit](https://www.reddit.com/r/AZURE/comments/1dddpxz/issue_setting_up_custom_performance_counters/).
 
+We are using the following performance counters:
+
+```
+\SQLServer:Memory Manager\Total Server Memory (KB)
+\SQLServer:Memory Manager\Target Server Memory (KB)
+```
 
 ## Deployment with PowerShell
-The deployment creates a new resource group, asks the user for the SQL Server admin password, and then creates resources to test custom performance counters of an Azure SQL VM.
+The deployment creates a new resource group, asks the user for the SQL Server admin password, and then creates resources to log the custom performance counters..
 
 ``` PowerShell
 Connect-AzAccount
