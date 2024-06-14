@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "virtualMachineName": {
+      "value": "vm-sqlvm"
+    },
+    "virtualMachineSize": {
+      "value": "Standard_D4s_v3"
+    },
+    "virtualNetworkName": {
+      "value": "vnet-sqlvm"
+    },
+    "subnetName": {
+      "value": "snet-sqlvm"
+    },
+    "imageOffer": {
+      "value": "sql2022-ws2022"
+    },
+    "sqlSku": {
+      "value": "SQLDEV-gen2"
+    },
+    "adminUsername": {
+      "value": "azureuser"
+    },
+    "logAnalyticsWorkspaceName": {
+      "value": "law-sqlvm"
+    },
+    "dataCollectionRuleName": {
+      "value": "dcr-sqlvm"
+    }
+  }
+}
